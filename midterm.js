@@ -18,36 +18,36 @@ result = Number(prompt("Make a Selection: "));
 a = Number(result)
 
 if (a <= 0 ) {
-    result = "Invalid";
+    result = "Invalid Entry";
     console.log(" " + result); 
 }
 
 if (a > 5 ) {
-    result = "Invalid";
+    result = "Invalid Entry";
     console.log(" " + result); 
 }
 if (a == 1 ) {
-    result = "Loading";
+    result = "Loading Game";
     console.log(" " + result); 
 }
 
 if (a == 2) {
-    result = "Saving";
+    result = "Saving status";
     console.log(" " + result); 
 }
 
 if (a == 3) {
-    result = "Playing";
+    result = "Lets Play!";
     console.log(" " + result); 
 }
   
 if (a == 4)  {
-    result = "Helping";
+    result = "Sending in some help!";
     console.log(" " + result); 
 }
 
 if (a == 5)  {
-    result = "Game Over";
+    result = "Game Over!";
     console.log(" " + result);  
     setTimeout(() => {  close(); }, 2000);
 }
