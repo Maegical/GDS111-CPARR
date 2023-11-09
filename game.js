@@ -14,40 +14,20 @@ c.fillText("Make a Selection.", 10, 350);
 
 // Prompt Menu
 
-result = Number(prompt("Make a Selection: "));
-a = Number(result)
+const playerArr = ["1", "2", "3", "4", "5"]; //ID
 
-if (a <= 0 ) {
-    result = "Invalid Entry";
-    console.log(" " + result); 
-}
+let playerID = prompt("Enter player ID: ");
 
-if (a > 5 ) {
-    result = "Invalid Entry";
-    console.log(" " + result); 
-}
-if (a == 1 ) {
-    result = "Loading Game";
-    console.log(" " + result); 
+let validUser = false; 
+for(let i=0; i < playerArr.length; i++){
+    if (playerID == playerArr.length[i]) {
+            validUser = true;
+        
+    }
 }
 
-if (a == 2) {
-    result = "Saving status";
-    console.log(" " + result); 
-}
-
-if (a == 3) {
-    result = "Lets Play!";
-    console.log(" " + result); 
-}
-  
-if (a == 4)  {
-    result = "Sending in some help!";
-    console.log(" " + result); 
-}
-
-if (a == 5)  {
-    result = "Game Over!";
-    console.log(" " + result);  
-    setTimeout(() => {  close(); }, 2000);
+if (validUser == true) {
+    console.log("Welcome to the game!");
+} else{
+    console.log("Go away hacker ...");
 }
