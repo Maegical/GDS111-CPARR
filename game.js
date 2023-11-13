@@ -10,11 +10,11 @@ c.fillText("2. Save", 10, 150);
 c.fillText("3. Play", 10, 200);
 c.fillText("4. Help", 10, 250);
 c.fillText("5. Quit", 10, 300);
-c.fillText("Make a Selection.", 10, 350);
+c.fillText("6. ", 10, 350);
 
 // Prompt Menu
 
-const playerArr = ["1", "2", "3", "4", "5"]; //ID
+ const playerArr = ["1", "2", "3", "4", "5"]; //ID
 
 let playerID = prompt("Enter player ID: ");
 
@@ -23,11 +23,11 @@ for(let i=0; i < playerArr.length; i++){
     if (playerID == playerArr.length[i]) {
             validUser = true;
         
-    }
+    } 
 }
 
 if (validUser == true) {
     console.log("Welcome to the game!");
 } else{
     console.log("Go away hacker ...");
-}
+} 
