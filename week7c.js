@@ -19,7 +19,7 @@ class Warrior {
 }
 
 const leviathan = new Warrior();
-leviathan.setDamage(10);
+leviathan.setDamage(10);    
 leviathan.setHealth(100);
 console.log("Leviathan's Stats:");
 console.log(leviathan.getDamage());
