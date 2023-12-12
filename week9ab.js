@@ -15,7 +15,7 @@ for(i=start; i<end; i++) {
         fun.push(String("Fizz"));
        // alert("Fizz");
     } else if (i % 5 == 0) {
-        fun.push(String("Buzz"));
+        fun.push(String("Buzz"));   
        // alert("Buzz");
     } else {
         fun.push(String(i));
